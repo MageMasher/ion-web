@@ -1,0 +1,11 @@
+{:main hello-webpack.core
+ :output-to "out/main.js"
+ :output-dir "out"
+ :infer-externs true
+ :npm-deps false
+ :foreign-libs [{:file "dist/index_bundle.js"
+                 :provides ["react" "react-dom" "lambda" "aws"]
+                 :global-exports {aws AWS
+                                  lambda Lambda
+                                  react React
+                                  react-dom ReactDOM}}]}
